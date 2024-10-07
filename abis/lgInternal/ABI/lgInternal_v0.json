@@ -1,0 +1,5546 @@
+[
+    {
+        "type": "function",
+        "name": "activateFarmableItem",
+        "inputs": [
+            {
+                "name": "farmableItemId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x5b44cce9"
+    },
+    {
+        "type": "function",
+        "name": "deactivateFarmableItem",
+        "inputs": [
+            {
+                "name": "farmableItemId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x81227c92"
+    },
+    {
+        "type": "function",
+        "name": "getActiveFarmableCount",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x795fe204"
+    },
+    {
+        "type": "function",
+        "name": "getActiveFarmables",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "tuple[]",
+                "internalType": "struct LibStructs.FarmableItem[]",
+                "components": [
+                    {
+                        "name": "active",
+                        "type": "bool",
+                        "internalType": "bool"
+                    },
+                    {
+                        "name": "poolId",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "hourlyRate",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "cap",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "uri",
+                        "type": "string",
+                        "internalType": "string"
+                    },
+                    {
+                        "name": "class",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "stat",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "receivesHatcheryLevelBonus",
+                        "type": "bool",
+                        "internalType": "bool"
+                    },
+                    {
+                        "name": "receivesRarityBonus",
+                        "type": "bool",
+                        "internalType": "bool"
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x060811d6"
+    },
+    {
+        "type": "function",
+        "name": "getFarmableItemCount",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xb204d3be"
+    },
+    {
+        "type": "function",
+        "name": "getFarmableItemData",
+        "inputs": [
+            {
+                "name": "farmableItemId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "tuple",
+                "internalType": "struct LibStructs.FarmableItem",
+                "components": [
+                    {
+                        "name": "active",
+                        "type": "bool",
+                        "internalType": "bool"
+                    },
+                    {
+                        "name": "poolId",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "hourlyRate",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "cap",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "uri",
+                        "type": "string",
+                        "internalType": "string"
+                    },
+                    {
+                        "name": "class",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "stat",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "receivesHatcheryLevelBonus",
+                        "type": "bool",
+                        "internalType": "bool"
+                    },
+                    {
+                        "name": "receivesRarityBonus",
+                        "type": "bool",
+                        "internalType": "bool"
+                    }
+                ]
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x2888752d"
+    },
+    {
+        "type": "function",
+        "name": "getHuskPoolIds",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "huskPoolIds",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xc734cd06"
+    },
+    {
+        "type": "function",
+        "name": "getMinionPoolIds",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "minionPoolIds",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x1752b705"
+    },
+    {
+        "type": "function",
+        "name": "getTotalHusks",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "totalHusks",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xdb38858b"
+    },
+    {
+        "type": "function",
+        "name": "getTotalMinions",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "totalMinions",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x440c4f6b"
+    },
+    {
+        "type": "function",
+        "name": "modifyFarmableItem",
+        "inputs": [
+            {
+                "name": "farmableItemId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "poolId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "hourlyRate",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "cap",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "class",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "stat",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "receivesHatcheryLevelBonus",
+                "type": "bool",
+                "internalType": "bool"
+            },
+            {
+                "name": "receivesRarityBonus",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xfa44d4cb"
+    },
+    {
+        "type": "function",
+        "name": "registerNewFarmableItem",
+        "inputs": [
+            {
+                "name": "poolId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "hourlyRate",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "cap",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "class",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "stat",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "receivesHatcheryLevelBonus",
+                "type": "bool",
+                "internalType": "bool"
+            },
+            {
+                "name": "receivesRarityBonus",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x930f7d41"
+    },
+    {
+        "type": "function",
+        "name": "removeHuskPoolId",
+        "inputs": [
+            {
+                "name": "_huskPoolId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xebe654da"
+    },
+    {
+        "type": "function",
+        "name": "removeMinionPoolId",
+        "inputs": [
+            {
+                "name": "_minionPoolId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x42698baf"
+    },
+    {
+        "type": "function",
+        "name": "setHuskPoolIds",
+        "inputs": [
+            {
+                "name": "_huskPoolIds",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x7523f7dd"
+    },
+    {
+        "type": "function",
+        "name": "setMinionPoolIds",
+        "inputs": [
+            {
+                "name": "_minionPoolIds",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x942d4f98"
+    },
+    {
+        "type": "function",
+        "name": "batchSacrificeUnicorns",
+        "inputs": [
+            {
+                "name": "tokenIds",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xd11f7757"
+    },
+    {
+        "type": "function",
+        "name": "getMaxBatchSacrificeUnicornsAmount",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "maxBatchAmount",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x12a74e6e"
+    },
+    {
+        "type": "function",
+        "name": "getUnicornSoulsPoolId",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "poolId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x89148de2"
+    },
+    {
+        "type": "function",
+        "name": "setMaxBatchSacrificeUnicornsAmount",
+        "inputs": [
+            {
+                "name": "maxBatchAmount",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x82b7e980"
+    },
+    {
+        "type": "function",
+        "name": "setUnicornSoulsPoolId",
+        "inputs": [
+            {
+                "name": "poolId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x8dff87f1"
+    },
+    {
+        "type": "function",
+        "name": "addAffixesToBucket",
+        "inputs": [
+            {
+                "name": "affixesIds",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "bucketId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x89c23fe3"
+    },
+    {
+        "type": "function",
+        "name": "addRitualTemplateToPool",
+        "inputs": [
+            {
+                "name": "ritualTemplateId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "ritualPoolId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "rngWeight",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x2fe458da"
+    },
+    {
+        "type": "function",
+        "name": "batchConsumeRitualCharges",
+        "inputs": [
+            {
+                "name": "ritualIds",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xc5f9f86b"
+    },
+    {
+        "type": "function",
+        "name": "canConsumeRitual",
+        "inputs": [
+            {
+                "name": "ritualId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "user",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "canConsume",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x97e567e9"
+    },
+    {
+        "type": "function",
+        "name": "consumeRitualCharge",
+        "inputs": [
+            {
+                "name": "ritualId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xe55b1803"
+    },
+    {
+        "type": "function",
+        "name": "createAffix",
+        "inputs": [
+            {
+                "name": "affix",
+                "type": "tuple",
+                "internalType": "struct LibHatcheryRituals.Affix",
+                "components": [
+                    {
+                        "name": "affixType",
+                        "type": "uint8",
+                        "internalType": "enum LibHatcheryRituals.AffixType"
+                    },
+                    {
+                        "name": "isPositive",
+                        "type": "bool",
+                        "internalType": "bool"
+                    },
+                    {
+                        "name": "charges",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "cost",
+                        "type": "tuple",
+                        "internalType": "struct LibRitualComponents.RitualCost",
+                        "components": [
+                            {
+                                "name": "component",
+                                "type": "tuple",
+                                "internalType": "struct LibRitualComponents.RitualComponent",
+                                "components": [
+                                    {
+                                        "name": "amount",
+                                        "type": "uint256",
+                                        "internalType": "uint256"
+                                    },
+                                    {
+                                        "name": "assetType",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "poolId",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "asset",
+                                        "type": "address",
+                                        "internalType": "address"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "transferType",
+                                "type": "uint8",
+                                "internalType": "enum LibRitualComponents.RitualCostTransferType"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "product",
+                        "type": "tuple",
+                        "internalType": "struct LibRitualComponents.RitualProduct",
+                        "components": [
+                            {
+                                "name": "component",
+                                "type": "tuple",
+                                "internalType": "struct LibRitualComponents.RitualComponent",
+                                "components": [
+                                    {
+                                        "name": "amount",
+                                        "type": "uint256",
+                                        "internalType": "uint256"
+                                    },
+                                    {
+                                        "name": "assetType",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "poolId",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "asset",
+                                        "type": "address",
+                                        "internalType": "address"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "transferType",
+                                "type": "uint8",
+                                "internalType": "enum LibRitualComponents.RitualProductTransferType"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "constraint",
+                        "type": "tuple",
+                        "internalType": "struct LibConstraints.Constraint",
+                        "components": [
+                            {
+                                "name": "constraintType",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "operator",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "value",
+                                "type": "uint256",
+                                "internalType": "uint256"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "weight",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    }
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "id",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "selector": "0x4d6ce674"
+    },
+    {
+        "type": "function",
+        "name": "createAffixBucket",
+        "inputs": [
+            {
+                "name": "affixIds",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xa80a56bb"
+    },
+    {
+        "type": "function",
+        "name": "createRitual",
+        "inputs": [
+            {
+                "name": "ritualTemplatePoolId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x5365dbe3"
+    },
+    {
+        "type": "function",
+        "name": "createRitualTemplate",
+        "inputs": [
+            {
+                "name": "template",
+                "type": "tuple",
+                "internalType": "struct LibHatcheryRituals.RitualTemplate",
+                "components": [
+                    {
+                        "name": "rarity",
+                        "type": "uint8",
+                        "internalType": "uint8"
+                    },
+                    {
+                        "name": "charges",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "soulbound",
+                        "type": "bool",
+                        "internalType": "bool"
+                    },
+                    {
+                        "name": "affixBucketIds",
+                        "type": "uint256[]",
+                        "internalType": "uint256[]"
+                    },
+                    {
+                        "name": "consumptionConstraints",
+                        "type": "tuple[]",
+                        "internalType": "struct LibConstraints.Constraint[]",
+                        "components": [
+                            {
+                                "name": "constraintType",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "operator",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "value",
+                                "type": "uint256",
+                                "internalType": "uint256"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "consumptionCosts",
+                        "type": "tuple[]",
+                        "internalType": "struct LibRitualComponents.RitualCost[]",
+                        "components": [
+                            {
+                                "name": "component",
+                                "type": "tuple",
+                                "internalType": "struct LibRitualComponents.RitualComponent",
+                                "components": [
+                                    {
+                                        "name": "amount",
+                                        "type": "uint256",
+                                        "internalType": "uint256"
+                                    },
+                                    {
+                                        "name": "assetType",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "poolId",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "asset",
+                                        "type": "address",
+                                        "internalType": "address"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "transferType",
+                                "type": "uint8",
+                                "internalType": "enum LibRitualComponents.RitualCostTransferType"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "consumptionProducts",
+                        "type": "tuple[]",
+                        "internalType": "struct LibRitualComponents.RitualProduct[]",
+                        "components": [
+                            {
+                                "name": "component",
+                                "type": "tuple",
+                                "internalType": "struct LibRitualComponents.RitualComponent",
+                                "components": [
+                                    {
+                                        "name": "amount",
+                                        "type": "uint256",
+                                        "internalType": "uint256"
+                                    },
+                                    {
+                                        "name": "assetType",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "poolId",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "asset",
+                                        "type": "address",
+                                        "internalType": "address"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "transferType",
+                                "type": "uint8",
+                                "internalType": "enum LibRitualComponents.RitualProductTransferType"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "id",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "selector": "0xf92f8b34"
+    },
+    {
+        "type": "function",
+        "name": "createRitualTemplatePool",
+        "inputs": [
+            {
+                "name": "creationCosts",
+                "type": "tuple[]",
+                "internalType": "struct LibRitualComponents.RitualCost[]",
+                "components": [
+                    {
+                        "name": "component",
+                        "type": "tuple",
+                        "internalType": "struct LibRitualComponents.RitualComponent",
+                        "components": [
+                            {
+                                "name": "amount",
+                                "type": "uint256",
+                                "internalType": "uint256"
+                            },
+                            {
+                                "name": "assetType",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "poolId",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "asset",
+                                "type": "address",
+                                "internalType": "address"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "transferType",
+                        "type": "uint8",
+                        "internalType": "enum LibRitualComponents.RitualCostTransferType"
+                    }
+                ]
+            },
+            {
+                "name": "creationConstraints",
+                "type": "tuple[]",
+                "internalType": "struct LibConstraints.Constraint[]",
+                "components": [
+                    {
+                        "name": "constraintType",
+                        "type": "uint128",
+                        "internalType": "uint128"
+                    },
+                    {
+                        "name": "operator",
+                        "type": "uint128",
+                        "internalType": "uint128"
+                    },
+                    {
+                        "name": "value",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    }
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "id",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "selector": "0x747e9f61"
+    },
+    {
+        "type": "function",
+        "name": "getCreationConstraintsAndCosts",
+        "inputs": [
+            {
+                "name": "ritualTemplatePoolId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "constraints",
+                "type": "tuple[]",
+                "internalType": "struct LibConstraints.Constraint[]",
+                "components": [
+                    {
+                        "name": "constraintType",
+                        "type": "uint128",
+                        "internalType": "uint128"
+                    },
+                    {
+                        "name": "operator",
+                        "type": "uint128",
+                        "internalType": "uint128"
+                    },
+                    {
+                        "name": "value",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    }
+                ]
+            },
+            {
+                "name": "costs",
+                "type": "tuple[]",
+                "internalType": "struct LibRitualComponents.RitualCost[]",
+                "components": [
+                    {
+                        "name": "component",
+                        "type": "tuple",
+                        "internalType": "struct LibRitualComponents.RitualComponent",
+                        "components": [
+                            {
+                                "name": "amount",
+                                "type": "uint256",
+                                "internalType": "uint256"
+                            },
+                            {
+                                "name": "assetType",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "poolId",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "asset",
+                                "type": "address",
+                                "internalType": "address"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "transferType",
+                        "type": "uint8",
+                        "internalType": "enum LibRitualComponents.RitualCostTransferType"
+                    }
+                ]
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x9161867a"
+    },
+    {
+        "type": "function",
+        "name": "getMaxRitualsPerBatch",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "maxRituals",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x53f4ef31"
+    },
+    {
+        "type": "function",
+        "name": "getRitualTemplateById",
+        "inputs": [
+            {
+                "name": "ritualTemplateId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "ritualTemplate",
+                "type": "tuple",
+                "internalType": "struct LibHatcheryRituals.RitualTemplate",
+                "components": [
+                    {
+                        "name": "rarity",
+                        "type": "uint8",
+                        "internalType": "uint8"
+                    },
+                    {
+                        "name": "charges",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "soulbound",
+                        "type": "bool",
+                        "internalType": "bool"
+                    },
+                    {
+                        "name": "affixBucketIds",
+                        "type": "uint256[]",
+                        "internalType": "uint256[]"
+                    },
+                    {
+                        "name": "consumptionConstraints",
+                        "type": "tuple[]",
+                        "internalType": "struct LibConstraints.Constraint[]",
+                        "components": [
+                            {
+                                "name": "constraintType",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "operator",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "value",
+                                "type": "uint256",
+                                "internalType": "uint256"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "consumptionCosts",
+                        "type": "tuple[]",
+                        "internalType": "struct LibRitualComponents.RitualCost[]",
+                        "components": [
+                            {
+                                "name": "component",
+                                "type": "tuple",
+                                "internalType": "struct LibRitualComponents.RitualComponent",
+                                "components": [
+                                    {
+                                        "name": "amount",
+                                        "type": "uint256",
+                                        "internalType": "uint256"
+                                    },
+                                    {
+                                        "name": "assetType",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "poolId",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "asset",
+                                        "type": "address",
+                                        "internalType": "address"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "transferType",
+                                "type": "uint8",
+                                "internalType": "enum LibRitualComponents.RitualCostTransferType"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "consumptionProducts",
+                        "type": "tuple[]",
+                        "internalType": "struct LibRitualComponents.RitualProduct[]",
+                        "components": [
+                            {
+                                "name": "component",
+                                "type": "tuple",
+                                "internalType": "struct LibRitualComponents.RitualComponent",
+                                "components": [
+                                    {
+                                        "name": "amount",
+                                        "type": "uint256",
+                                        "internalType": "uint256"
+                                    },
+                                    {
+                                        "name": "assetType",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "poolId",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "asset",
+                                        "type": "address",
+                                        "internalType": "address"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "transferType",
+                                "type": "uint8",
+                                "internalType": "enum LibRitualComponents.RitualProductTransferType"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x6427bc40"
+    },
+    {
+        "type": "function",
+        "name": "removeAffixFromBucket",
+        "inputs": [
+            {
+                "name": "affixId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "bucketId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x68ca82a4"
+    },
+    {
+        "type": "function",
+        "name": "setMaxRitualsPerBatch",
+        "inputs": [
+            {
+                "name": "maxRitualsPerBatch",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x49b2d448"
+    },
+    {
+        "type": "function",
+        "name": "checkConstraint",
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "constraint",
+                "type": "tuple",
+                "internalType": "struct LibConstraints.Constraint",
+                "components": [
+                    {
+                        "name": "constraintType",
+                        "type": "uint128",
+                        "internalType": "uint128"
+                    },
+                    {
+                        "name": "operator",
+                        "type": "uint128",
+                        "internalType": "uint128"
+                    },
+                    {
+                        "name": "value",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    }
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x3da2579c"
+    },
+    {
+        "type": "function",
+        "name": "checkConstraintForUserAndExtraTokens",
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "constraint",
+                "type": "tuple",
+                "internalType": "struct LibConstraints.Constraint",
+                "components": [
+                    {
+                        "name": "constraintType",
+                        "type": "uint128",
+                        "internalType": "uint128"
+                    },
+                    {
+                        "name": "operator",
+                        "type": "uint128",
+                        "internalType": "uint128"
+                    },
+                    {
+                        "name": "value",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    }
+                ]
+            },
+            {
+                "name": "extraTokenIdsToCheck",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xf7308ef9"
+    },
+    {
+        "type": "function",
+        "name": "allowAddressToMintDarkMarks",
+        "inputs": [
+            {
+                "name": "minter",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x1302f72b"
+    },
+    {
+        "type": "function",
+        "name": "burnDarkMarksFrom",
+        "inputs": [
+            {
+                "name": "account",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "amount",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xca2e3fc0"
+    },
+    {
+        "type": "function",
+        "name": "denyAddressToMintDarkMarks",
+        "inputs": [
+            {
+                "name": "minter",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xce11c8b6"
+    },
+    {
+        "type": "function",
+        "name": "getAddressesPermittedToMintDarkMarks",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address[]",
+                "internalType": "address[]"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x2fb16a66"
+    },
+    {
+        "type": "function",
+        "name": "getDarkMarksOperationsForAddress",
+        "inputs": [
+            {
+                "name": "controller",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "minted",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "burned",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x1aa80210"
+    },
+    {
+        "type": "function",
+        "name": "mintDarkMarks",
+        "inputs": [
+            {
+                "name": "account",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "amount",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x7b04e69f"
+    },
+    {
+        "type": "function",
+        "name": "createRitual",
+        "inputs": [
+            {
+                "name": "to",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "name",
+                "type": "string",
+                "internalType": "string"
+            },
+            {
+                "name": "rarity",
+                "type": "uint8",
+                "internalType": "uint8"
+            },
+            {
+                "name": "costs",
+                "type": "tuple[]",
+                "internalType": "struct LibRitualComponents.RitualCost[]",
+                "components": [
+                    {
+                        "name": "component",
+                        "type": "tuple",
+                        "internalType": "struct LibRitualComponents.RitualComponent",
+                        "components": [
+                            {
+                                "name": "amount",
+                                "type": "uint256",
+                                "internalType": "uint256"
+                            },
+                            {
+                                "name": "assetType",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "poolId",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "asset",
+                                "type": "address",
+                                "internalType": "address"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "transferType",
+                        "type": "uint8",
+                        "internalType": "enum LibRitualComponents.RitualCostTransferType"
+                    }
+                ]
+            },
+            {
+                "name": "products",
+                "type": "tuple[]",
+                "internalType": "struct LibRitualComponents.RitualProduct[]",
+                "components": [
+                    {
+                        "name": "component",
+                        "type": "tuple",
+                        "internalType": "struct LibRitualComponents.RitualComponent",
+                        "components": [
+                            {
+                                "name": "amount",
+                                "type": "uint256",
+                                "internalType": "uint256"
+                            },
+                            {
+                                "name": "assetType",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "poolId",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "asset",
+                                "type": "address",
+                                "internalType": "address"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "transferType",
+                        "type": "uint8",
+                        "internalType": "enum LibRitualComponents.RitualProductTransferType"
+                    }
+                ]
+            },
+            {
+                "name": "constraints",
+                "type": "tuple[]",
+                "internalType": "struct LibConstraints.Constraint[]",
+                "components": [
+                    {
+                        "name": "constraintType",
+                        "type": "uint128",
+                        "internalType": "uint128"
+                    },
+                    {
+                        "name": "operator",
+                        "type": "uint128",
+                        "internalType": "uint128"
+                    },
+                    {
+                        "name": "value",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    }
+                ]
+            },
+            {
+                "name": "charges",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "soulbound",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "ritualTokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "selector": "0xf7702d68"
+    },
+    {
+        "type": "function",
+        "name": "getMaxChargesByRitualId",
+        "inputs": [
+            {
+                "name": "ritualId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xd333172b"
+    },
+    {
+        "type": "function",
+        "name": "getRitualDetails",
+        "inputs": [
+            {
+                "name": "ritualId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "tuple",
+                "internalType": "struct LibRitualData.Ritual",
+                "components": [
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "internalType": "string"
+                    },
+                    {
+                        "name": "rarity",
+                        "type": "uint8",
+                        "internalType": "uint8"
+                    },
+                    {
+                        "name": "costs",
+                        "type": "tuple[]",
+                        "internalType": "struct LibRitualComponents.RitualCost[]",
+                        "components": [
+                            {
+                                "name": "component",
+                                "type": "tuple",
+                                "internalType": "struct LibRitualComponents.RitualComponent",
+                                "components": [
+                                    {
+                                        "name": "amount",
+                                        "type": "uint256",
+                                        "internalType": "uint256"
+                                    },
+                                    {
+                                        "name": "assetType",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "poolId",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "asset",
+                                        "type": "address",
+                                        "internalType": "address"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "transferType",
+                                "type": "uint8",
+                                "internalType": "enum LibRitualComponents.RitualCostTransferType"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "products",
+                        "type": "tuple[]",
+                        "internalType": "struct LibRitualComponents.RitualProduct[]",
+                        "components": [
+                            {
+                                "name": "component",
+                                "type": "tuple",
+                                "internalType": "struct LibRitualComponents.RitualComponent",
+                                "components": [
+                                    {
+                                        "name": "amount",
+                                        "type": "uint256",
+                                        "internalType": "uint256"
+                                    },
+                                    {
+                                        "name": "assetType",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "poolId",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "asset",
+                                        "type": "address",
+                                        "internalType": "address"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "transferType",
+                                "type": "uint8",
+                                "internalType": "enum LibRitualComponents.RitualProductTransferType"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "constraints",
+                        "type": "tuple[]",
+                        "internalType": "struct LibConstraints.Constraint[]",
+                        "components": [
+                            {
+                                "name": "constraintType",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "operator",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "value",
+                                "type": "uint256",
+                                "internalType": "uint256"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "charges",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "soulbound",
+                        "type": "bool",
+                        "internalType": "bool"
+                    }
+                ]
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xc0287b2d"
+    },
+    {
+        "type": "function",
+        "name": "recycleRitualCharges",
+        "inputs": [
+            {
+                "name": "ritualId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xc943b402"
+    },
+    {
+        "type": "function",
+        "name": "validateChargesAndGetRitualDetailsForConsume",
+        "inputs": [
+            {
+                "name": "ritualId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "ritualOwner",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "tuple",
+                "internalType": "struct LibRitualData.Ritual",
+                "components": [
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "internalType": "string"
+                    },
+                    {
+                        "name": "rarity",
+                        "type": "uint8",
+                        "internalType": "uint8"
+                    },
+                    {
+                        "name": "costs",
+                        "type": "tuple[]",
+                        "internalType": "struct LibRitualComponents.RitualCost[]",
+                        "components": [
+                            {
+                                "name": "component",
+                                "type": "tuple",
+                                "internalType": "struct LibRitualComponents.RitualComponent",
+                                "components": [
+                                    {
+                                        "name": "amount",
+                                        "type": "uint256",
+                                        "internalType": "uint256"
+                                    },
+                                    {
+                                        "name": "assetType",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "poolId",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "asset",
+                                        "type": "address",
+                                        "internalType": "address"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "transferType",
+                                "type": "uint8",
+                                "internalType": "enum LibRitualComponents.RitualCostTransferType"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "products",
+                        "type": "tuple[]",
+                        "internalType": "struct LibRitualComponents.RitualProduct[]",
+                        "components": [
+                            {
+                                "name": "component",
+                                "type": "tuple",
+                                "internalType": "struct LibRitualComponents.RitualComponent",
+                                "components": [
+                                    {
+                                        "name": "amount",
+                                        "type": "uint256",
+                                        "internalType": "uint256"
+                                    },
+                                    {
+                                        "name": "assetType",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "poolId",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "asset",
+                                        "type": "address",
+                                        "internalType": "address"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "transferType",
+                                "type": "uint8",
+                                "internalType": "enum LibRitualComponents.RitualProductTransferType"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "constraints",
+                        "type": "tuple[]",
+                        "internalType": "struct LibConstraints.Constraint[]",
+                        "components": [
+                            {
+                                "name": "constraintType",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "operator",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "value",
+                                "type": "uint256",
+                                "internalType": "uint256"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "charges",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "soulbound",
+                        "type": "bool",
+                        "internalType": "bool"
+                    }
+                ]
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x11d63105"
+    },
+    {
+        "type": "function",
+        "name": "getArcana",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "arcana",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x5ba88c4e"
+    },
+    {
+        "type": "function",
+        "name": "getClass",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "class",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x512d62df"
+    },
+    {
+        "type": "function",
+        "name": "getClassRarityAndStat",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "statId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "class",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "rarity",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "stat",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xec968b60"
+    },
+    {
+        "type": "function",
+        "name": "getCunning",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "cunning",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x3c594255"
+    },
+    {
+        "type": "function",
+        "name": "getMight",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "might",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x19101530"
+    },
+    {
+        "type": "function",
+        "name": "getRarity",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "rarity",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x48758697"
+    },
+    {
+        "type": "function",
+        "name": "getStats",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "might",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "wickedness",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "tenacity",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "cunning",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "arcana",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x7b303965"
+    },
+    {
+        "type": "function",
+        "name": "getTenacity",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "tenacity",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xc1a13da7"
+    },
+    {
+        "type": "function",
+        "name": "getWickedness",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "wickedness",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xc6fc8e2f"
+    },
+    {
+        "type": "function",
+        "name": "allowAddressToMintUNIM",
+        "inputs": [
+            {
+                "name": "minter",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x099539e1"
+    },
+    {
+        "type": "function",
+        "name": "burnUNIMFrom",
+        "inputs": [
+            {
+                "name": "account",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "amount",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x5277a76d"
+    },
+    {
+        "type": "function",
+        "name": "denyAddressToMintUNIM",
+        "inputs": [
+            {
+                "name": "minter",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xf8bb2e1c"
+    },
+    {
+        "type": "function",
+        "name": "getAddressesPermittedToMintUNIM",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address[]",
+                "internalType": "address[]"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xbf45c398"
+    },
+    {
+        "type": "function",
+        "name": "getUNIMOperationsForAddress",
+        "inputs": [
+            {
+                "name": "controller",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "minted",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "burned",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xc82a45be"
+    },
+    {
+        "type": "function",
+        "name": "mintUNIM",
+        "inputs": [
+            {
+                "name": "account",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "amount",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xaf41bf7f"
+    },
+    {
+        "type": "function",
+        "name": "addHatcheryLevelUnlockCost",
+        "inputs": [
+            {
+                "name": "_hatcheryLevel",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "_transferType",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "_amount",
+                "type": "uint128",
+                "internalType": "uint128"
+            },
+            {
+                "name": "_assetType",
+                "type": "uint128",
+                "internalType": "uint128"
+            },
+            {
+                "name": "_asset",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "_poolId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x66dc9bdd"
+    },
+    {
+        "type": "function",
+        "name": "getHatcheryLevel",
+        "inputs": [
+            {
+                "name": "_user",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x87aaee39"
+    },
+    {
+        "type": "function",
+        "name": "getHatcheryLevelCap",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xc354ec44"
+    },
+    {
+        "type": "function",
+        "name": "getHatcheryLevelUnlockCosts",
+        "inputs": [
+            {
+                "name": "_hatcheryLevel",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "tuple[]",
+                "internalType": "struct LevelUnlockCost[]",
+                "components": [
+                    {
+                        "name": "component",
+                        "type": "tuple",
+                        "internalType": "struct Component",
+                        "components": [
+                            {
+                                "name": "asset",
+                                "type": "address",
+                                "internalType": "address"
+                            },
+                            {
+                                "name": "poolId",
+                                "type": "uint256",
+                                "internalType": "uint256"
+                            },
+                            {
+                                "name": "amount",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            },
+                            {
+                                "name": "assetType",
+                                "type": "uint128",
+                                "internalType": "uint128"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "transferType",
+                        "type": "uint8",
+                        "internalType": "enum LevelUnlockCostTokenTransferType"
+                    }
+                ]
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x69d502ca"
+    },
+    {
+        "type": "function",
+        "name": "setHatcheryLevelCap",
+        "inputs": [
+            {
+                "name": "_hatcheryLevelCap",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x11d1db66"
+    },
+    {
+        "type": "function",
+        "name": "setHatcheryLevelUnlockCosts",
+        "inputs": [
+            {
+                "name": "_hatcheryLevel",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "_transferTypes",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "_amounts",
+                "type": "uint128[]",
+                "internalType": "uint128[]"
+            },
+            {
+                "name": "_assetTypes",
+                "type": "uint128[]",
+                "internalType": "uint128[]"
+            },
+            {
+                "name": "_assets",
+                "type": "address[]",
+                "internalType": "address[]"
+            },
+            {
+                "name": "_poolIds",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x60f71809"
+    },
+    {
+        "type": "function",
+        "name": "unlockNextHatcheryLevel",
+        "inputs": [],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x152e86ef"
+    },
+    {
+        "type": "function",
+        "name": "getMinionMultiplierForContribution",
+        "inputs": [
+            {
+                "name": "poolId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xc40865b1"
+    },
+    {
+        "type": "function",
+        "name": "setMinionMultiplierForContribution",
+        "inputs": [
+            {
+                "name": "poolIds",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "multipliers",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xf71b335b"
+    },
+    {
+        "type": "function",
+        "name": "calculateCurrentWaveCount",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "waveCount",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x3055ad5b"
+    },
+    {
+        "type": "function",
+        "name": "claimRewards",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "rewardUNIM",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "rewardDarkMarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "selector": "0x372500ab"
+    },
+    {
+        "type": "function",
+        "name": "getClaimableDarkMarks",
+        "inputs": [
+            {
+                "name": "waveId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "claimableDarkMarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xbec08540"
+    },
+    {
+        "type": "function",
+        "name": "getClaimableUNIM",
+        "inputs": [
+            {
+                "name": "waveId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "claimableUNIM",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x9f745457"
+    },
+    {
+        "type": "function",
+        "name": "getContributionPercentage",
+        "inputs": [
+            {
+                "name": "user",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "contributionPercentage",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xc2d848ea"
+    },
+    {
+        "type": "function",
+        "name": "getDailyRewards",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "dailyUNIM",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "dailyDarkMarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x68527008"
+    },
+    {
+        "type": "function",
+        "name": "getDistributedRewards",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "distributedUNIM",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "distributedDarkMarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x28275b07"
+    },
+    {
+        "type": "function",
+        "name": "getGlobalQueue",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "waveIds",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "quantities",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xa292c1e1"
+    },
+    {
+        "type": "function",
+        "name": "getGlobalQueueAtIndex",
+        "inputs": [
+            {
+                "name": "index",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "waveId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "quantity",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "waveUNIM",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "waveDarkMarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "unclaimedUnim",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "unclaimedDarkmarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xbc23a3bc"
+    },
+    {
+        "type": "function",
+        "name": "getGlobalQueueFront",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "waveId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "quantity",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "waveUNIM",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "waveDarkMarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "unclaimedUnim",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "unclaimedDarkmarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xd3e9b15c"
+    },
+    {
+        "type": "function",
+        "name": "getGlobalQueueLength",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "length",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x14e0294a"
+    },
+    {
+        "type": "function",
+        "name": "getGlobalQueueTail",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "waveId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "quantity",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "waveUNIM",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "waveDarkMarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "unclaimedUnim",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "unclaimedDarkmarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x98b30011"
+    },
+    {
+        "type": "function",
+        "name": "getGlobalQueueUnclaimedRewards",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "unclaimedUnim",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "unclaimedDarkmarks",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x36439868"
+    },
+    {
+        "type": "function",
+        "name": "getGlobalQueueWaveRewards",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "waveUNIM",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "waveDarkMarks",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x86852755"
+    },
+    {
+        "type": "function",
+        "name": "getPlayerQueue",
+        "inputs": [
+            {
+                "name": "user",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "waveIds",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "quantities",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xde90d489"
+    },
+    {
+        "type": "function",
+        "name": "getPlayerQueueAtIndex",
+        "inputs": [
+            {
+                "name": "user",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "index",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "waveId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "quantity",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x25b94e89"
+    },
+    {
+        "type": "function",
+        "name": "getPlayerQueueFront",
+        "inputs": [
+            {
+                "name": "user",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "timestamp",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "quantity",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xf85a86b6"
+    },
+    {
+        "type": "function",
+        "name": "getPlayerQueueLength",
+        "inputs": [
+            {
+                "name": "user",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "length",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x114d8076"
+    },
+    {
+        "type": "function",
+        "name": "getPlayerQueueTail",
+        "inputs": [
+            {
+                "name": "user",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "waveId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "quantity",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x1648f1d6"
+    },
+    {
+        "type": "function",
+        "name": "getPlayerRewards",
+        "inputs": [
+            {
+                "name": "user",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "rewardUNIM",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "rewardDarkMarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x5206245e"
+    },
+    {
+        "type": "function",
+        "name": "getUnclaimedRewards",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "unclaimedUnim",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "unclaimedDarkmarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x16230257"
+    },
+    {
+        "type": "function",
+        "name": "getWaveCount",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "waveCount",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x1517c561"
+    },
+    {
+        "type": "function",
+        "name": "getWaveDarkMarks",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "waveDarkMarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x0a2912c4"
+    },
+    {
+        "type": "function",
+        "name": "getWaveDarkMarksByWaveId",
+        "inputs": [
+            {
+                "name": "waveId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "waveDarkMarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x44e5e022"
+    },
+    {
+        "type": "function",
+        "name": "getWaveTime",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "waveTime",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xd5c28031"
+    },
+    {
+        "type": "function",
+        "name": "getWaveUNIM",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "waveUNIM",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x15c4f1ce"
+    },
+    {
+        "type": "function",
+        "name": "getWaveUNIMByWaveId",
+        "inputs": [
+            {
+                "name": "waveId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "waveUNIM",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xff4623e5"
+    },
+    {
+        "type": "function",
+        "name": "initializeGlobalQueue",
+        "inputs": [],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x0132b393"
+    },
+    {
+        "type": "function",
+        "name": "isGlobalQueueInitialized",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "isInitialized",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x999e16b6"
+    },
+    {
+        "type": "function",
+        "name": "isPlayerQueueInitialized",
+        "inputs": [
+            {
+                "name": "user",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "isInitialized",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x012c4997"
+    },
+    {
+        "type": "function",
+        "name": "setWaveDarkMarks",
+        "inputs": [
+            {
+                "name": "_waveDarkMarks",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x38f804a1"
+    },
+    {
+        "type": "function",
+        "name": "setWaveUNIM",
+        "inputs": [
+            {
+                "name": "_waveUNIM",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xede84498"
+    },
+    {
+        "type": "function",
+        "name": "calculateFarmingBonus",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "farmableItemId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "shadowcornFarmingData",
+                "type": "tuple",
+                "internalType": "struct LibStructs.FarmableItem",
+                "components": [
+                    {
+                        "name": "active",
+                        "type": "bool",
+                        "internalType": "bool"
+                    },
+                    {
+                        "name": "poolId",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "hourlyRate",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "cap",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "uri",
+                        "type": "string",
+                        "internalType": "string"
+                    },
+                    {
+                        "name": "class",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "stat",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "receivesHatcheryLevelBonus",
+                        "type": "bool",
+                        "internalType": "bool"
+                    },
+                    {
+                        "name": "receivesRarityBonus",
+                        "type": "bool",
+                        "internalType": "bool"
+                    }
+                ]
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xd4688cc9"
+    },
+    {
+        "type": "function",
+        "name": "calculateStakingRewards",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "stakingReward",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x0ee2bb31"
+    },
+    {
+        "type": "function",
+        "name": "computeTimeToReachCap",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "timeToReachCap",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x40b640df"
+    },
+    {
+        "type": "function",
+        "name": "forceUnstake",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x91460149"
+    },
+    {
+        "type": "function",
+        "name": "getFarmableItemByShadowcornId",
+        "inputs": [
+            {
+                "name": "shadowcornId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "farmableItem",
+                "type": "tuple",
+                "internalType": "struct LibStructs.FarmableItem",
+                "components": [
+                    {
+                        "name": "active",
+                        "type": "bool",
+                        "internalType": "bool"
+                    },
+                    {
+                        "name": "poolId",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "hourlyRate",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "cap",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "uri",
+                        "type": "string",
+                        "internalType": "string"
+                    },
+                    {
+                        "name": "class",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "stat",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "receivesHatcheryLevelBonus",
+                        "type": "bool",
+                        "internalType": "bool"
+                    },
+                    {
+                        "name": "receivesRarityBonus",
+                        "type": "bool",
+                        "internalType": "bool"
+                    }
+                ]
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x3315b516"
+    },
+    {
+        "type": "function",
+        "name": "getFarmingBonusBreakdown",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "baseRate",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "hatcheryLevelBonus",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "classBonus",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "rarityBonus",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xc0a1d291"
+    },
+    {
+        "type": "function",
+        "name": "getFarmingHusksPerHour",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "fireHusks",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "slimeHusks",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "voltHusks",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "soulHusks",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "nebulaHusks",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x408ccff1"
+    },
+    {
+        "type": "function",
+        "name": "getFarmingRateByFarmableItems",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "farmableItemIds",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x8ea0330b"
+    },
+    {
+        "type": "function",
+        "name": "getHatcheryLevelCumulativeBonus",
+        "inputs": [
+            {
+                "name": "hatcheryLevel",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x230a2a9c"
+    },
+    {
+        "type": "function",
+        "name": "getHatcheryLevelHuskLimitCumulative",
+        "inputs": [
+            {
+                "name": "hatcheryLevel",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "cumulativeHuskLimit",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x1d278c1a"
+    },
+    {
+        "type": "function",
+        "name": "getHatcheryLevelsFullInfo",
+        "inputs": [
+            {
+                "name": "page",
+                "type": "uint8",
+                "internalType": "uint8"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "tuple[5]",
+                "internalType": "struct LevelFullInfo[5]",
+                "components": [
+                    {
+                        "name": "unlockCosts",
+                        "type": "tuple[]",
+                        "internalType": "struct LevelUnlockCost[]",
+                        "components": [
+                            {
+                                "name": "component",
+                                "type": "tuple",
+                                "internalType": "struct Component",
+                                "components": [
+                                    {
+                                        "name": "asset",
+                                        "type": "address",
+                                        "internalType": "address"
+                                    },
+                                    {
+                                        "name": "poolId",
+                                        "type": "uint256",
+                                        "internalType": "uint256"
+                                    },
+                                    {
+                                        "name": "amount",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    },
+                                    {
+                                        "name": "assetType",
+                                        "type": "uint128",
+                                        "internalType": "uint128"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "transferType",
+                                "type": "uint8",
+                                "internalType": "enum LevelUnlockCostTokenTransferType"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "cumulativeBonus",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "cumulativeHuskLimit",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "hatcheryLevel",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    }
+                ]
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xe0780cf9"
+    },
+    {
+        "type": "function",
+        "name": "getStakedShadowcornsByUser",
+        "inputs": [
+            {
+                "name": "user",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "_pageNumber",
+                "type": "uint32",
+                "internalType": "uint32"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "stakedShadowcorns",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "moreEntriesExist",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xa4e0aeb3"
+    },
+    {
+        "type": "function",
+        "name": "getStakingDetails",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "husksCreated",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "timeToReachCap",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "capAmount",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "timeUntilNextHusk",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xeab88bf5"
+    },
+    {
+        "type": "function",
+        "name": "getStakingInfoByShadowcornId",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "tuple",
+                "internalType": "struct LibStructs.StakeData",
+                "components": [
+                    {
+                        "name": "staker",
+                        "type": "address",
+                        "internalType": "address"
+                    },
+                    {
+                        "name": "staked",
+                        "type": "bool",
+                        "internalType": "bool"
+                    },
+                    {
+                        "name": "farmableItemId",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "stakeTimestamp",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    }
+                ]
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x7c716b91"
+    },
+    {
+        "type": "function",
+        "name": "getTimeUntilNextHusk",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "timeUntilNextHusk",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xcbd94efb"
+    },
+    {
+        "type": "function",
+        "name": "harvestAndRestake",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x4f288872"
+    },
+    {
+        "type": "function",
+        "name": "setHatcheryLevelCumulativeBonus",
+        "inputs": [
+            {
+                "name": "hatcheryLevel",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "cumulativeBonus",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x098a11f0"
+    },
+    {
+        "type": "function",
+        "name": "setHatcheryLevelHuskLimitCumulative",
+        "inputs": [
+            {
+                "name": "hatcheryLevel",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "cumulativeHuskLimit",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xe2dc49ac"
+    },
+    {
+        "type": "function",
+        "name": "stakeShadowcorn",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "farmableItemId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xb3a722ef"
+    },
+    {
+        "type": "function",
+        "name": "unstakeShadowcorn",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xa40dccd4"
+    },
+    {
+        "type": "function",
+        "name": "approveForPool",
+        "inputs": [
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "operator",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x85bc82e2"
+    },
+    {
+        "type": "function",
+        "name": "balanceOf",
+        "inputs": [
+            {
+                "name": "account",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "id",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x00fdd58e"
+    },
+    {
+        "type": "function",
+        "name": "balanceOfBatch",
+        "inputs": [
+            {
+                "name": "accounts",
+                "type": "address[]",
+                "internalType": "address[]"
+            },
+            {
+                "name": "ids",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x4e1273f4"
+    },
+    {
+        "type": "function",
+        "name": "burn",
+        "inputs": [
+            {
+                "name": "from",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "amount",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xf5298aca"
+    },
+    {
+        "type": "function",
+        "name": "contractURI",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "string",
+                "internalType": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xe8a3d485"
+    },
+    {
+        "type": "function",
+        "name": "createPoolV1",
+        "inputs": [
+            {
+                "name": "_capacity",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "_transferable",
+                "type": "bool",
+                "internalType": "bool"
+            },
+            {
+                "name": "_burnable",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "selector": "0x3bad2d82"
+    },
+    {
+        "type": "function",
+        "name": "createPoolV2",
+        "inputs": [
+            {
+                "name": "_capacity",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "_transferable",
+                "type": "bool",
+                "internalType": "bool"
+            },
+            {
+                "name": "_burnable",
+                "type": "bool",
+                "internalType": "bool"
+            },
+            {
+                "name": "poolURI",
+                "type": "string",
+                "internalType": "string"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "selector": "0x84fa03a1"
+    },
+    {
+        "type": "function",
+        "name": "createSimplePool",
+        "inputs": [
+            {
+                "name": "_capacity",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "selector": "0xb507ef52"
+    },
+    {
+        "type": "function",
+        "name": "isApprovedForAll",
+        "inputs": [
+            {
+                "name": "account",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "operator",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xe985e9c5"
+    },
+    {
+        "type": "function",
+        "name": "isApprovedForPool",
+        "inputs": [
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "operator",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x027b3fc2"
+    },
+    {
+        "type": "function",
+        "name": "mint",
+        "inputs": [
+            {
+                "name": "to",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "amount",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "data",
+                "type": "bytes",
+                "internalType": "bytes"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x731133e9"
+    },
+    {
+        "type": "function",
+        "name": "mintBatch",
+        "inputs": [
+            {
+                "name": "to",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "poolIDs",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "amounts",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "data",
+                "type": "bytes",
+                "internalType": "bytes"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x1f7fdffa"
+    },
+    {
+        "type": "function",
+        "name": "paymentToken",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x3013ce29"
+    },
+    {
+        "type": "function",
+        "name": "poolBasePrice",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x8925d013"
+    },
+    {
+        "type": "function",
+        "name": "poolIsBurnable",
+        "inputs": [
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x3c50a3c5"
+    },
+    {
+        "type": "function",
+        "name": "poolIsTransferable",
+        "inputs": [
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x69453ce9"
+    },
+    {
+        "type": "function",
+        "name": "poolMintBatch",
+        "inputs": [
+            {
+                "name": "id",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "toAddresses",
+                "type": "address[]",
+                "internalType": "address[]"
+            },
+            {
+                "name": "amounts",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x21adca96"
+    },
+    {
+        "type": "function",
+        "name": "safeBatchTransferFrom",
+        "inputs": [
+            {
+                "name": "from",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "to",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "ids",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "amounts",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "data",
+                "type": "bytes",
+                "internalType": "bytes"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x2eb2c2d6"
+    },
+    {
+        "type": "function",
+        "name": "safeTransferFrom",
+        "inputs": [
+            {
+                "name": "from",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "to",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "id",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "amount",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "data",
+                "type": "bytes",
+                "internalType": "bytes"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xf242432a"
+    },
+    {
+        "type": "function",
+        "name": "setApprovalForAll",
+        "inputs": [
+            {
+                "name": "operator",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "approved",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xa22cb465"
+    },
+    {
+        "type": "function",
+        "name": "setContractURI",
+        "inputs": [
+            {
+                "name": "_contractURI",
+                "type": "string",
+                "internalType": "string"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x938e3d7b"
+    },
+    {
+        "type": "function",
+        "name": "setController",
+        "inputs": [
+            {
+                "name": "newController",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x92eefe9b"
+    },
+    {
+        "type": "function",
+        "name": "setPaymentToken",
+        "inputs": [
+            {
+                "name": "newPaymentToken",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x6a326ab1"
+    },
+    {
+        "type": "function",
+        "name": "setPoolBasePrice",
+        "inputs": [
+            {
+                "name": "newBasePrice",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x78cf2e84"
+    },
+    {
+        "type": "function",
+        "name": "setPoolBurnable",
+        "inputs": [
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "burnable",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x2365c859"
+    },
+    {
+        "type": "function",
+        "name": "setPoolController",
+        "inputs": [
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "newController",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xdc55d0b2"
+    },
+    {
+        "type": "function",
+        "name": "setPoolTransferable",
+        "inputs": [
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "transferable",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xf3dc0a85"
+    },
+    {
+        "type": "function",
+        "name": "setURI",
+        "inputs": [
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "poolURI",
+                "type": "string",
+                "internalType": "string"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x862440e2"
+    },
+    {
+        "type": "function",
+        "name": "supportsInterface",
+        "inputs": [
+            {
+                "name": "interfaceId",
+                "type": "bytes4",
+                "internalType": "bytes4"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x01ffc9a7"
+    },
+    {
+        "type": "function",
+        "name": "terminusController",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x366e59e3"
+    },
+    {
+        "type": "function",
+        "name": "terminusPoolCapacity",
+        "inputs": [
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x5dc8bdf8"
+    },
+    {
+        "type": "function",
+        "name": "terminusPoolController",
+        "inputs": [
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xd0c402e5"
+    },
+    {
+        "type": "function",
+        "name": "terminusPoolSupply",
+        "inputs": [
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xa44cfc82"
+    },
+    {
+        "type": "function",
+        "name": "totalPools",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xab3c7e52"
+    },
+    {
+        "type": "function",
+        "name": "unapproveForPool",
+        "inputs": [
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "operator",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x1fbeae86"
+    },
+    {
+        "type": "function",
+        "name": "uri",
+        "inputs": [
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "string",
+                "internalType": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x0e89341c"
+    },
+    {
+        "type": "function",
+        "name": "withdrawPayments",
+        "inputs": [
+            {
+                "name": "toAddress",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "amount",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x0e7afec5"
+    },
+    {
+        "type": "function",
+        "name": "extractUNIMAmount",
+        "inputs": [
+            {
+                "name": "amount",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xfa4b1156"
+    },
+    {
+        "type": "function",
+        "name": "fulfillCreateRitualRandomness",
+        "inputs": [
+            {
+                "name": "nonce",
+                "type": "uint256",
+                "internalType": "uint256"
+            },
+            {
+                "name": "rngList",
+                "type": "uint256[]",
+                "internalType": "uint256[]"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x52a44107"
+    },
+    {
+        "type": "event",
+        "name": "AdminChanged",
+        "inputs": [
+            {
+                "name": "previousAdmin",
+                "type": "address",
+                "indexed": false,
+                "internalType": "address"
+            },
+            {
+                "name": "newAdmin",
+                "type": "address",
+                "indexed": false,
+                "internalType": "address"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x7e644d79"
+    },
+    {
+        "type": "event",
+        "name": "OwnershipTransferred",
+        "inputs": [
+            {
+                "name": "previousOwner",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "newOwner",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x8be0079c"
+    },
+    {
+        "type": "event",
+        "name": "DiamondCut",
+        "inputs": [
+            {
+                "name": "_diamondCut",
+                "type": "tuple[]",
+                "indexed": false,
+                "internalType": "struct IDiamondCut.FacetCut[]",
+                "components": [
+                    {
+                        "name": "facetAddress",
+                        "type": "address",
+                        "internalType": "address"
+                    },
+                    {
+                        "name": "action",
+                        "type": "uint8",
+                        "internalType": "enum IDiamondCut.FacetCutAction"
+                    },
+                    {
+                        "name": "functionSelectors",
+                        "type": "bytes4[]",
+                        "internalType": "bytes4[]"
+                    }
+                ]
+            },
+            {
+                "name": "_init",
+                "type": "address",
+                "indexed": false,
+                "internalType": "address"
+            },
+            {
+                "name": "_calldata",
+                "type": "bytes",
+                "indexed": false,
+                "internalType": "bytes"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x8faa7087"
+    },
+    {
+        "type": "event",
+        "name": "FarmableItemActivated",
+        "inputs": [
+            {
+                "name": "admin",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "farmableItemId",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x6c9ad51a"
+    },
+    {
+        "type": "event",
+        "name": "FarmableItemDeactivated",
+        "inputs": [
+            {
+                "name": "admin",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "farmableItemId",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0xbf5f7751"
+    },
+    {
+        "type": "event",
+        "name": "FarmableItemDeleted",
+        "inputs": [
+            {
+                "name": "admin",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "farmableItemId",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x99f4d01e"
+    },
+    {
+        "type": "event",
+        "name": "FarmableItemModified",
+        "inputs": [
+            {
+                "name": "admin",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "farmableItemId",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "poolId",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "hourlyRate",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "cap",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "class",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "stat",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x4e3d844a"
+    },
+    {
+        "type": "event",
+        "name": "FarmableItemRegistered",
+        "inputs": [
+            {
+                "name": "admin",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "farmableItemId",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "poolId",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "hourlyRate",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "cap",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "uri",
+                "type": "string",
+                "indexed": true,
+                "internalType": "string"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0xa3831ed6"
+    },
+    {
+        "type": "event",
+        "name": "GasReturnedToUser",
+        "inputs": [
+            {
+                "name": "amountReturned",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "txPrice",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "gasSpent",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "user",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "success",
+                "type": "bool",
+                "indexed": true,
+                "internalType": "bool"
+            },
+            {
+                "name": "transactionType",
+                "type": "string",
+                "indexed": true,
+                "internalType": "string"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x6bbde817"
+    },
+    {
+        "type": "event",
+        "name": "GasReturnerInsufficientBalance",
+        "inputs": [
+            {
+                "name": "txPrice",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "gasSpent",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "user",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "transactionType",
+                "type": "string",
+                "indexed": true,
+                "internalType": "string"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0xc4b5eea2"
+    },
+    {
+        "type": "event",
+        "name": "GasReturnerMaxGasReturnedPerTransactionChanged",
+        "inputs": [
+            {
+                "name": "oldMaxGasReturnedPerTransaction",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "newMaxGasReturnedPerTransaction",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "admin",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0xa72c9035"
+    },
+    {
+        "type": "event",
+        "name": "BatchSacrificeUnicorns",
+        "inputs": [
+            {
+                "name": "tokenIds",
+                "type": "uint256[]",
+                "indexed": false,
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "user",
+                "type": "address",
+                "indexed": false,
+                "internalType": "address"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x4b943d25"
+    },
+    {
+        "type": "event",
+        "name": "AffixBucketCreated",
+        "inputs": [
+            {
+                "name": "id",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            },
+            {
+                "name": "affixIds",
+                "type": "uint256[]",
+                "indexed": false,
+                "internalType": "uint256[]"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0xe8e15fd3"
+    },
+    {
+        "type": "event",
+        "name": "AffixCreated",
+        "inputs": [
+            {
+                "name": "id",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x238c0a09"
+    },
+    {
+        "type": "event",
+        "name": "BeginRitualCreation",
+        "inputs": [
+            {
+                "name": "playerWallet",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "ritualTemplatePoolId",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            },
+            {
+                "name": "vrfRequestId",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x96facfc0"
+    },
+    {
+        "type": "event",
+        "name": "ExternalErrorLog",
+        "inputs": [
+            {
+                "name": "message",
+                "type": "bytes",
+                "indexed": false,
+                "internalType": "bytes"
+            },
+            {
+                "name": "key",
+                "type": "string",
+                "indexed": false,
+                "internalType": "string"
+            },
+            {
+                "name": "keyvalue",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x94119fc5"
+    },
+    {
+        "type": "event",
+        "name": "FinishRitualCreation",
+        "inputs": [
+            {
+                "name": "vrfRequestId",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            },
+            {
+                "name": "ritualTemplateId",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "ritualTokenId",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            },
+            {
+                "name": "affixIdsApplied",
+                "type": "uint256[]",
+                "indexed": false,
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "user",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0xa1d3e071"
+    },
+    {
+        "type": "event",
+        "name": "HatcheryAffixWarning",
+        "inputs": [
+            {
+                "name": "warningText",
+                "type": "string",
+                "indexed": false,
+                "internalType": "string"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x38ae9968"
+    },
+    {
+        "type": "event",
+        "name": "RitualTemplateCreated",
+        "inputs": [
+            {
+                "name": "id",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x8d706ea2"
+    },
+    {
+        "type": "event",
+        "name": "RitualTemplatePoolCreated",
+        "inputs": [
+            {
+                "name": "id",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0xbdcc64f8"
+    },
+    {
+        "type": "event",
+        "name": "HatcheryLevelUnlocked",
+        "inputs": [
+            {
+                "name": "player",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "oldLevel",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "newLevel",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0xd3797e3c"
+    },
+    {
+        "type": "event",
+        "name": "AddedToQueue",
+        "inputs": [
+            {
+                "name": "player",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "waveId",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "quantity",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x53efec59"
+    },
+    {
+        "type": "event",
+        "name": "BegunNewWave",
+        "inputs": [
+            {
+                "name": "newWaveId",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "prevWaveTime",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "newWaveTime",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0xbbbc1fb2"
+    },
+    {
+        "type": "event",
+        "name": "ClaimedRewards",
+        "inputs": [
+            {
+                "name": "player",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "rewardUNIM",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "rewardDarkMarks",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x70de20a5"
+    },
+    {
+        "type": "event",
+        "name": "ForcedUnstakeExecuted",
+        "inputs": [
+            {
+                "name": "player",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x2816dbb2"
+    },
+    {
+        "type": "event",
+        "name": "SetShadowcornFarmingData",
+        "inputs": [
+            {
+                "name": "player",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            },
+            {
+                "name": "farmingData",
+                "type": "tuple",
+                "indexed": false,
+                "internalType": "struct LibStructs.FarmableItem",
+                "components": [
+                    {
+                        "name": "active",
+                        "type": "bool",
+                        "internalType": "bool"
+                    },
+                    {
+                        "name": "poolId",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "hourlyRate",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "cap",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "uri",
+                        "type": "string",
+                        "internalType": "string"
+                    },
+                    {
+                        "name": "class",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "stat",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                    },
+                    {
+                        "name": "receivesHatcheryLevelBonus",
+                        "type": "bool",
+                        "internalType": "bool"
+                    },
+                    {
+                        "name": "receivesRarityBonus",
+                        "type": "bool",
+                        "internalType": "bool"
+                    }
+                ]
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x3b0c9603"
+    },
+    {
+        "type": "event",
+        "name": "ShadowcornHarvest",
+        "inputs": [
+            {
+                "name": "player",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            },
+            {
+                "name": "poolId",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            },
+            {
+                "name": "stakingRewards",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x63c5210a"
+    },
+    {
+        "type": "event",
+        "name": "ShadowcornStaked",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            },
+            {
+                "name": "staker",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "staked",
+                "type": "bool",
+                "indexed": false,
+                "internalType": "bool"
+            },
+            {
+                "name": "farmableItemId",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "stakeTimestamp",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x7b12bc61"
+    },
+    {
+        "type": "event",
+        "name": "ShadowcornUnstaked",
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            },
+            {
+                "name": "staker",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "staked",
+                "type": "bool",
+                "indexed": false,
+                "internalType": "bool"
+            },
+            {
+                "name": "farmableItemId",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "stakedTime",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0xa7671833"
+    },
+    {
+        "type": "event",
+        "name": "ControlTransferred",
+        "inputs": [
+            {
+                "name": "previousController",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "newController",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0xa06677f7"
+    },
+    {
+        "type": "event",
+        "name": "PoolControlTransferred",
+        "inputs": [
+            {
+                "name": "poolID",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            },
+            {
+                "name": "previousController",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "newController",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0xbb8e9c3c"
+    },
+    {
+        "type": "event",
+        "name": "ApprovalForAll",
+        "inputs": [
+            {
+                "name": "account",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "operator",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "approved",
+                "type": "bool",
+                "indexed": false,
+                "internalType": "bool"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x17307eab"
+    },
+    {
+        "type": "event",
+        "name": "PoolMintBatch",
+        "inputs": [
+            {
+                "name": "id",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            },
+            {
+                "name": "operator",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "from",
+                "type": "address",
+                "indexed": false,
+                "internalType": "address"
+            },
+            {
+                "name": "toAddresses",
+                "type": "address[]",
+                "indexed": false,
+                "internalType": "address[]"
+            },
+            {
+                "name": "amounts",
+                "type": "uint256[]",
+                "indexed": false,
+                "internalType": "uint256[]"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0xba627779"
+    },
+    {
+        "type": "event",
+        "name": "TransferBatch",
+        "inputs": [
+            {
+                "name": "operator",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "from",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "to",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "ids",
+                "type": "uint256[]",
+                "indexed": false,
+                "internalType": "uint256[]"
+            },
+            {
+                "name": "values",
+                "type": "uint256[]",
+                "indexed": false,
+                "internalType": "uint256[]"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x4a39dc06"
+    },
+    {
+        "type": "event",
+        "name": "TransferSingle",
+        "inputs": [
+            {
+                "name": "operator",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "from",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "to",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "id",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "value",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0xc3d58168"
+    },
+    {
+        "type": "event",
+        "name": "URI",
+        "inputs": [
+            {
+                "name": "value",
+                "type": "string",
+                "indexed": false,
+                "internalType": "string"
+            },
+            {
+                "name": "id",
+                "type": "uint256",
+                "indexed": true,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x6bb7ff70"
+    }
+]

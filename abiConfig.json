@@ -1,0 +1,54 @@
+{
+    "projectName": "ShadowForge",
+    "buildDirectory": "build",
+    "abiOutputDirectory": "abis",
+    "abiConfigurations": [
+        {
+            "configuration": "lgInternal",
+            "sortedJSON": true,
+            "searchRecursively": true,
+            "contractsToInclude": [],
+            "contractsToIgnore": [
+                "IDiamondCut",
+                "IDiamondLoupe",
+                "IERC165",
+                "IERC173",
+                "MockToken",
+                "MockTerminus"
+            ],
+            "eventsToIgnore": [],
+            "functionsToIgnore": [],
+            "selectorsToIgnore": [],
+            "eventsPrecedence": {
+                "OwnershipTransferred": "LibDiamond",
+                "DiamondCut": "LibDiamond"
+            }
+        },
+        {
+            "configuration": "public",
+            "sortedJSON": true,
+            "searchRecursively": true,
+            "contractsToInclude": [],
+            "contractsToIgnore": [
+                "DiamondCutFacet",
+                "DiamondLoupeFacet",
+                "IDiamondLoupe",
+                "DiamondProxyFacet",
+                "DiamondOwnerFacet",
+                "ERC173",
+                "SupportsInterfaceFacet"
+            ],
+            "eventsToIgnore": [],
+            "functionsToIgnore": [
+                "transferOwnership",
+                "owner",
+                "supportsInterface"
+            ],
+            "selectorsToIgnore": [],
+            "eventsPrecedence": {
+                "OwnershipTransferred": "LibDiamond",
+                "DiamondCut": "LibDiamond"
+            }
+        }
+    ]
+}
